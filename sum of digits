@@ -1,0 +1,13 @@
+def sumOfDigits(number):
+  sum = 0
+  
+  while(number > 0):
+    remainder = number % 10
+    sum = sum + remainder
+    number = number // 10
+  print(sum)
+
+number = input("Enter a number: ")
+number = abs(int(number))
+
+sumOfDigits(int(number))
