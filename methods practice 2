@@ -1,0 +1,29 @@
+import math
+
+
+def isEven(number):
+  if number % 2 == 0:
+    print("True")
+  elif number % 2 != 0:
+    print("False")
+
+def generateGreeting(name):
+  print("Hello " + name)
+
+def calculateFactorial(number):
+  answer = math.factorial(int(number))
+  print ("The factorial of " + str(number) + " is " + str(answer))
+
+choice = input("What would you like to do? \n1. Check if a number is even \n2. Greet a person \n3. Calculate the factorial of a number \n")
+
+if choice == "1":
+  number = input("Enter a number: ")
+  isEven(int(number))
+elif choice == "2":
+  name = input("What is your name? ")
+  generateGreeting(name)
+elif choice == "3":
+  number = input("Enter a number: ")
+  calculateFactorial(number)
+else:
+  print("Invalid choice")
