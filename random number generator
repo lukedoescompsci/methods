@@ -1,0 +1,13 @@
+import random
+
+
+def randomNumber(a, b):
+  minValue = min(a, b)
+  maxValue = max(a, b)
+  print(random.randint(minValue, maxValue))
+
+
+a = int(input("Input your first number: "))
+b = int(input("Input your second number: "))
+while(True):
+  randomNumber(a, b)
