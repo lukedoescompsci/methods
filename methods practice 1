@@ -1,0 +1,31 @@
+def addition(firstNumber, secondNumber):
+  answer = float(firstNumber) + float(secondNumber)
+  print(answer)
+  
+def subtraction(firstNumber, secondNumber):
+  answer = float(firstNumber) - float(secondNumber)
+  print(answer)
+  
+def multiplication(firstNumber, secondNumber):
+  answer = float(firstNumber) * float(secondNumber)
+  print(answer)
+  
+def division(firstNumber, secondNumber):
+  answer = float(firstNumber) / float(secondNumber)
+  print(answer)
+
+firstNumber = input("Enter the first number: ")
+secondNumber = input("Enter the second number: ")
+
+choice = input("Enter the operation you want to perform 1:(+), 2:(-), 3:(*), 4:(/): ")
+
+if(choice == '1' or choice == '+'):
+  addition(firstNumber, secondNumber)
+elif(choice == '2' or choice == '-'):
+  subtraction(firstNumber, secondNumber)
+elif(choice == '3' or choice == '*'):
+  multiplication(firstNumber, secondNumber)
+elif(choice == '4' or choice == '/'):
+  division(firstNumber, secondNumber)
+else:
+  print("Invalid choice")
